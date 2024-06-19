@@ -53,8 +53,11 @@ main {
     margin: auto;
 }
 
-section {
+article {
     background-color: #231f1a;
+}
+
+section {
     padding: 16px;
 }
 
@@ -64,21 +67,16 @@ section .container {
     justify-content: space-between;
 }
 
-section #jogo {
-    background-image: linear-gradient(to bottom, black, #231f1a);
-}
-
-section #persona {
-    background-image: linear-gradient(to bottom, #231f1a, #54473b);
-}
-
-section #contato {
-    background-image: linear-gradient(to bottom, #54473b, #231f1a);
-}
-
 div .video {
+    height: 43.01vh;
     text-align: center;
     margin-right: 32px;
+}
+
+div .video > iframe:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.397);
+    transition: transform .8s, box-shadow .9s;
 }
 
 div .text {
@@ -122,6 +120,12 @@ div .text a:hover {
     height: 288px;
 }
 
+#persona img:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.199);
+    transition: transform .8s, box-shadow .9s;
+}
+
 #persona p {
     color: white;
     letter-spacing: 1px;
@@ -160,6 +164,10 @@ div .social img {
     border-radius: 4px;
 }
 
+#diferente {
+    margin-left: 8px;
+}
+
 div .metodos {
     display: flex;
     justify-content: space-between;
@@ -181,7 +189,14 @@ form textarea {
     height: 100px;
 }
 
+form button {
+    font-family: 'Roboto';
+    font-weight: bold;
+}
+
 form button:hover {
+    font-weight: bold;
+    color: white;
     background-color: #eed3ba;
     cursor: pointer;
 }
@@ -195,7 +210,6 @@ footer {
 }
 
 footer a:hover {
-    color: #d6d6d6;
     text-decoration: underline;
 }
 
